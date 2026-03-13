@@ -2,19 +2,23 @@
 
 ## Cursor Cloud specific instructions
 
-This repository (`ARJUNVARMA2000/FPL`) is currently an empty project with no source code, dependencies, or configuration files. The only commit is an empty placeholder commit.
+This is a React + TypeScript + Vite application — a deployment manager UI for data replication pipelines (PostgreSQL to Snowflake).
 
-### Current state (as of initial setup)
+### Services
 
-- **No source code** — no application, library, or script files exist.
-- **No package manager or lockfile** — no `package.json`, `requirements.txt`, `Cargo.toml`, or equivalent.
-- **No build system** — no `Makefile`, `Dockerfile`, `docker-compose.yml`, or CI config.
-- **No tests** — no test files or test frameworks configured.
-- **No README** — no documentation exists.
+| Service | Command | Port | Notes |
+|---------|---------|------|-------|
+| Vite dev server | `npm run dev` | 5173 | Frontend only; no backend |
 
-### For future agents
+### Standard commands
 
-Once source code is added to this repository, this section should be updated with:
-- How to install dependencies (update script).
-- How to run lint, tests, build, and dev server.
-- Any non-obvious caveats discovered during setup.
+- **Lint**: `npm run lint` (ESLint)
+- **Build**: `npm run build` (tsc + vite build)
+- **Dev server**: `npm run dev` (Vite, port 5173)
+- **Preview prod build**: `npm run preview`
+
+### Non-obvious notes
+
+- The project uses Vite 8 with React 19 and TypeScript 5.9.
+- No backend or database is needed — the app is entirely client-side with mock data in `src/data.ts`.
+- To expose the dev server on all interfaces (needed for cloud agent browser testing): `npm run dev -- --host 0.0.0.0`.

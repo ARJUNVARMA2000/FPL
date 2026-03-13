@@ -5,17 +5,6 @@
   background-color: #0a0a0a;
 }
 
-.editor__sidebar {
-  width: 56px;
-  background-color: #0f0f0f;
-  border-right: 1px solid #1a1a1a;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 16px;
-  flex-shrink: 0;
-}
-
 .editor__main {
   flex: 1;
   padding: 24px 32px;
@@ -80,6 +69,17 @@
 .btn--sm {
   padding: 6px 12px;
   font-size: 12px;
+}
+
+.btn--danger {
+  background: transparent;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+}
+
+.btn--danger:hover {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: #ef4444;
 }
 
 /* ── Name row ────────────────────────────────────────── */
@@ -149,7 +149,7 @@
   border-bottom-color: #22c55e;
 }
 
-/* ── Content ─────────────────────────────────────────── */
+/* ── Content panel ───────────────────────────────────── */
 .editor__content {
   background: #111111;
   border: 1px solid #1a1a1a;
@@ -157,60 +157,7 @@
   padding: 20px;
 }
 
-.editor__toolbar-row {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-bottom: 16px;
-}
-
-.editor__filter-row {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 16px;
-}
-
-/* ── Search ──────────────────────────────────────────── */
-.editor__search {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: #141414;
-  border: 1px solid #2a2a2a;
-  border-radius: 8px;
-  padding: 8px 12px;
-  width: 260px;
-  color: #888;
-}
-
-.editor__search-input {
-  background: none;
-  border: none;
-  outline: none;
-  color: #e0e0e0;
-  font-size: 13px;
-  font-family: inherit;
-  width: 100%;
-}
-
-.editor__search-input::placeholder {
-  color: #666;
-}
-
-/* ── Show filters ────────────────────────────────────── */
-.editor__show-filters {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.editor__show-label {
-  color: #666;
-  font-size: 13px;
-  margin-right: 4px;
-}
-
+/* ── Filter pills (shared) ───────────────────────────── */
 .filter-pill {
   padding: 4px 12px;
   border-radius: 6px;
@@ -234,7 +181,7 @@
   color: #22c55e;
 }
 
-/* ── Data Table ──────────────────────────────────────── */
+/* ── Data Table (shared) ─────────────────────────────── */
 .table-wrapper {
   overflow-x: auto;
 }
@@ -288,7 +235,7 @@
   color: #999;
 }
 
-/* ── Status cells ────────────────────────────────────── */
+/* ── Status cells (shared) ───────────────────────────── */
 .status-cell {
   display: flex;
   align-items: center;
@@ -303,21 +250,4 @@
 .status--off {
   color: #888;
   font-size: 13px;
-}
-
-/* ── Placeholder ─────────────────────────────────────── */
-.editor__placeholder {
-  padding: 40px;
-  text-align: center;
-  color: #666;
-}
-
-.editor__placeholder h2 {
-  font-size: 18px;
-  color: #ccc;
-  margin-bottom: 8px;
-}
-
-.editor__placeholder p {
-  font-size: 14px;
 }

@@ -1,0 +1,111 @@
+.dest-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.dest-tab__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.dest-tab__header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dest-tab__header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dest-tab__icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.dest-tab__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin: 0;
+}
+
+.dest-tab__subtitle {
+  font-size: 13px;
+  color: #666;
+  margin: 2px 0 0;
+}
+
+.dest-tab__section {
+  padding: 20px 0;
+}
+
+.dest-tab__section-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ccc;
+  margin: 0 0 16px;
+}
+
+.dest-tab__divider {
+  height: 1px;
+  background: #1f1f1f;
+}
+
+.dest-tab__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.dest-tab__grid-wide {
+  grid-column: 1 / -1;
+}
+
+/* ── Settings list (toggle rows) ────────────────── */
+.dest-tab__settings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.dest-tab__setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.dest-tab__setting:last-child {
+  border-bottom: none;
+}
+
+.dest-tab__setting-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dest-tab__setting-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #e0e0e0;
+}
+
+.dest-tab__setting-desc {
+  font-size: 12px;
+  color: #666;
+}

@@ -1,0 +1,51 @@
+.tables-tab__toolbar-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.tables-tab__filter-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.tables-tab__search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #141414;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 260px;
+  color: #888;
+}
+
+.tables-tab__search-input {
+  background: none;
+  border: none;
+  outline: none;
+  color: #e0e0e0;
+  font-size: 13px;
+  font-family: inherit;
+  width: 100%;
+}
+
+.tables-tab__search-input::placeholder {
+  color: #666;
+}
+
+.tables-tab__show-filters {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tables-tab__show-label {
+  color: #666;
+  font-size: 13px;
+  margin-right: 4px;
+}

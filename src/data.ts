@@ -1,0 +1,68 @@
+import type { TableEntry } from './types';
+
+export const initialTables: TableEntry[] = [
+  {
+    id: '1',
+    name: 'account',
+    schema: 'public',
+    addedDaysAgo: 11,
+    isReplicating: false,
+    historyMode: null,
+  },
+  {
+    id: '2',
+    name: 'alert',
+    schema: 'public',
+    addedDaysAgo: 11,
+    isReplicating: true,
+    historyMode: 'enabled',
+  },
+  {
+    id: '3',
+    name: 'api_key',
+    schema: 'public',
+    addedDaysAgo: 11,
+    isReplicating: false,
+    historyMode: null,
+  },
+  {
+    id: '4',
+    name: 'invite',
+    schema: 'public',
+    addedDaysAgo: 11,
+    isReplicating: false,
+    historyMode: null,
+  },
+  {
+    id: '5',
+    name: 'company',
+    schema: 'public',
+    addedDaysAgo: 11,
+    isReplicating: false,
+    historyMode: null,
+  },
+  {
+    id: '6',
+    name: 'kafka_cluster',
+    schema: 'public',
+    addedDaysAgo: 11,
+    isReplicating: true,
+    historyMode: 'disabled',
+  },
+  {
+    id: '7',
+    name: 'schema_migrations',
+    schema: 'public',
+    addedDaysAgo: 11,
+    isReplicating: true,
+    historyMode: 'disabled',
+  },
+  {
+    id: '8',
+    name: 'usage',
+    schema: 'public',
+    addedDaysAgo: 11,
+    isReplicating: true,
+    historyMode: 'disabled',
+  },
+];
